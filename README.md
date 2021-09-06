@@ -1,5 +1,9 @@
 # Movie Together
 
+---
+
+[ENGLISH](./README_EN.md)
+
 ## 应用截图
 
 ![screenshot_1](./demo_screenshot.png)
