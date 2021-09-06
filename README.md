@@ -41,9 +41,9 @@
 
 ## 参考文档
 
-[Agora.io 官网](https://www.agora.io)
-[Web SDK 文档](https://docs.agora.io/cn/Voice/API%20Reference/web_ng/index.html)
-[agora-rtc-vue 文档](https://webdemo.agora.io/agora_rtc_vue_doc/)
+- [Agora.io 官网](https://www.agora.io)
+- [Web SDK 文档](https://docs.agora.io/cn/Voice/API%20Reference/web_ng/index.html)
+- [agora-rtc-vue 文档](https://webdemo.agora.io/agora_rtc_vue_doc/)
 
 ## 反馈
 

@@ -14,17 +14,13 @@
 
 This project implements a web DEMO that can remotely share audio and video streams and real-time interaction. You can use this to share videos with friends and conduct voice and video interactions at the same time. This application is developed based on Agora.io's remote Web SDK `agora-rtc-sdk-ng` and Vue component library `agora-rtc-vue`. The purpose of this project is to show the API and functions of `agora-rtc-vue`.
 
-本项目实现了一个可以远端分享音视频流和实时互动的 web DEMO,用户可以使用本应用与好友远程分享影片并同时进行音视频互动。
-本项目基于 Agora.io 的 Web SDK `agora-rtc-sdk-ng` 和 Vue 组件库 `agora-rtc-vue` 开发。
-本项目的目的在于展示 `agora-rtc-vue` 的 API 和功能。
-
 ## Usage
 
 1. Installation dependencies
 
 2. Enter the APPID you applied for on the Agora.io official website and the corresponding TOKEN to the corresponding location of `src/main.js`
 
-   > Refer to [verifying user permissions](https://docs.agora.io/cn/Agora%20Platform/token) to learn how to obtain App ID and Token. You can obtain a temporary token to quickly run the sample project.
+   > Refer to [verifying user permissions](https://docs.agora.io/en/Agora%20Platform/token) to learn how to obtain App ID and Token. You can obtain a temporary token to quickly run the sample project.
    >
    > The channel name used to generate the token must be the same as the channel name used when joining the channel. In order to improve the security of the project, Agora uses Tokens (dynamic keys) to authenticate users who are about to join the channel.
    >
@@ -41,16 +37,17 @@ This project implements a web DEMO that can remotely share audio and video strea
 
    1. When sharing a video with Chrome under Mac, friends open the URL, the video interface is green
    
-   there is a BUG in Chrome under Mac, turn off the Chrome hardware acceleration function, and re-share
+      there is a BUG in Chrome under Mac, turn off the Chrome hardware acceleration function, and re-share
 
    2. Unable to open page
-   Trust the HTTPS certificate in the setting page in the browser and system.
+   
+      Trust the HTTPS certificate in the setting page in the browser and system.
 
 ## Reference documents
 
-[Agora.io official website](https://www.agora.io)
-[Web SDK documentation](https://docs.agora.io/en/Voice/API%20Reference/web_ng/index.html)
-[agora-rtc-vue documentation (Chinese)](https://webdemo.agora.io/agora_rtc_vue_doc/)
+- [Agora.io official website](https://www.agora.io)
+- [Web SDK documentation](https://docs.agora.io/en/Voice/API%20Reference/web_ng/index.html)
+- [agora-rtc-vue documentation (Chinese)](https://webdemo.agora.io/agora_rtc_vue_doc/)
 
 ## Feedback
 
