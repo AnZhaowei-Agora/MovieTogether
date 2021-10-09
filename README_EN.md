@@ -55,7 +55,7 @@ If you have any questions or suggestions, you can give feedback by issues.
 
 ## Disclaimer
 
-The code of this project is used to show the APIs and related functions of Agora's products. It is not a complete project running in a complete local or online environment. It is used for translation and learning and must not be used for commercial purposes. Agora.io does not take responsibility for any losses and liabilities arising from any non-learning purposes of the project code.
+The code of this project is used to show the APIs and related functions of Agora.io related products. It is not a complete project running in a complete local or online environment. It is used for translation and learning and must not be used for commercial purposes. Agora.io No responsibility is assumed for any losses and liabilities arising from any non-learning purposes of the project code.
 
 When you use this project, please abide by the relevant local laws and regulations. Please confirm your right to use and disseminate the audio and video owners you use during use, and confirm the local laws and regulations governing broadcast and video content. You need to be fully responsible for the authenticity, legality, harmlessness, and functions of the audio and video content you use. Any legal responsibilities related to the use of video and audio are borne by you, and Agora.io does not assume any responsibility.
 
