@@ -6,8 +6,8 @@ import AgoraRTC from "../agora-rtc-vue/lib/agora-rtc-vue.umd.min";
 import "../agora-rtc-vue/lib/agora-rtc-vue.css";
 
 Vue.use(AgoraRTC, {
-  appid: "", // Your Appid
-  token: "", // Your Appid
+  appid: "", // Your App ID
+  token: "", // Your temp token
 });
 
 Vue.config.productionTip = false;
