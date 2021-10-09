@@ -1,49 +1,49 @@
 # Movie Together
 
----
+_English | [简体中文](./README.md)_
 
-[简体中文](./README.md)
+## Overview
 
-## Screenshots
+Based on the Agora Web SDK `agora-rtc-sdk-ng` and Vue component library `agora-rtc-vue`, this sample project shows how to implement a web app in which a user can share his/her local audio and video streams with remote users and make real-time interactions at the same time. This project is applicable to scenarios such as people watching a movie with friends and discussing the movie with them.
+
+Another purpose of this project is to show the APIs and functions of `agora-rtc-vue`.
 
 ![screenshot_1](./demo_screenshot.png)
 
 ![screenshot_2](./demo_screenshot2.png)
 
-## Introduce
+## Prerequisites
 
-This project implements a web DEMO that can remotely share audio and video streams and real-time interaction. You can use this to share videos with friends and conduct voice and video interactions at the same time. This application is developed based on Agora.io's remote Web SDK `agora-rtc-sdk-ng` and Vue component library `agora-rtc-vue`. The purpose of this project is to show the API and functions of `agora-rtc-vue`.
+- A browser that matches the [supported browser list](https://docs.agora.io/en/Video/web_sdk_compatibility?platform=Web). Agora highly recommends using the latest version of Google Chrome.
+- Physical audio and video input devices.
+- Node.js and npm
+- yarn
 
-## Usage
+## Run the sample project
 
-1. Installation dependencies
+1. Navigate to `demo_movies_together` and run `yarn` to install dependencies.
 
-2. Enter the APPID you applied for on the Agora.io official website and the corresponding TOKEN to the corresponding location of `src/main.js`
+2. Fill in `src/main.js` with the App ID and temp token generated in Agora Console.
 
-   > Refer to [verifying user permissions](https://docs.agora.io/en/Agora%20Platform/token) to learn how to obtain App ID and Token. You can obtain a temporary token to quickly run the sample project.
-   >
-   > The channel name used to generate the token must be the same as the channel name used when joining the channel. In order to improve the security of the project, Agora uses Tokens (dynamic keys) to authenticate users who are about to join the channel.
-   >
-   > The temporary token is for demonstration and testing purposes only.
+   > - For how to get the App ID and generate a temp token, see [verifying user permissions](https://docs.agora.io/en/Agora%20Platform/token) to learn how to obtain App ID and Token. You can obtain a temporary token to quickly run the sample project.
+   > - To improve the security of your project, Agora uses tokens (dynamic keys) to authenticate users joining the channel. The temporary token is for demonstration and testing purposes only. The channel name used to generate the token must be the same as the channel name used when joining the channel.
 
-3. Run the command `yarn serve`
-4. Browser open project address
-5. Click the button `选择想要分享的影片` to select the video you want to share
-6. Click to ``开始观影`` to enter the movie watching interface
-7. Share the viewing interface URL to friends
-8. Friends open the link, watch the video together and interact
+3. Run `yarn serve`.
+4. Open the project `https://localhost:8080/` on your browser.
+5. Click the `选择想要分享的影片` button to select the movie you want to share.
+6. Click to the `开始观影` button to start watching this movie.
+7. Share the URL of this movie to your friends.
+8. Friends can open the URL and watch the movie. While watching the movie, you can interact with each other via audio or video.
 
 ## Q&A
 
-   1. When sharing a video with Chrome under Mac, friends open the URL, the video interface is green
-   
-      there is a BUG in Chrome under Mac, turn off the Chrome hardware acceleration function, and re-share
+   1. Q: When sharing a video on macOS Chrome, friends open the URL but only see green video.
+      A: The green video is caused by a bug of macOS Chrome. You need to disable the Chrome hardware acceleration function, and re-share the URL to your friends.
 
-   2. Unable to open page
-   
-      Trust the HTTPS certificate in the setting page in the browser and system.
+   2. Q: I can not open the webpage.
+      A: You need to trust the HTTPS certificate in the setting page in the browser and system.
 
-## Reference documents
+## References
 
 - [Agora.io official website](https://www.agora.io)
 - [Web SDK documentation](https://docs.agora.io/en/Voice/API%20Reference/web_ng/index.html)
@@ -61,11 +61,11 @@ When you use this project, please abide by the relevant local laws and regulatio
 
 On the basis of this project following the GPL agreement, Agora.io reserves all rights to the code of this project.
 
-## related resources
+## Resources
 
-- You can read [the FAQ](https://docs.agora.io/en/faq) first
+- You can read [the FAQ](https://docs.agora.io/en/faq) first.
 - If you want to know more official examples, you can refer to [the official SDK examples](https://github.com/AgoraIO)
-- If you want to understand the application of the Shengwang SDK in complex scenarios, you can refer to [the official scenario case](https://github.com/AgoraIO-usecase)
-- If you want to learn about some of the projects maintained by developers in the Soundnet community, you can check [the community](https://github.com/AgoraIO-Community)
+- If you want to understand the application of the Agora SDKs in complex scenarios, you can refer to [the official scenario case](https://github.com/AgoraIO-usecase)
+- If you want to learn about some of the projects maintained by developers in the Agora community, you can check [the community](https://github.com/AgoraIO-Community)
 - If you have a problem and need help from the developer, you can go to [the developer community](https://rtcdeveloper.com/) to ask questions
 - If you need after-sales technical support, you can submit a ticket on [Agora Dashboard](https://dashboard.agora.io)

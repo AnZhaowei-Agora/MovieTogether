@@ -1,47 +1,48 @@
-# Movie Together
+# 一起看电影
 
----
+_[English](./README_EN.md) | 简体中文_
 
-[ENGLISH](./README_EN.md)
+## 简介
 
-## 应用截图
+本示例项目演示了如何基于 Agora 的 Web SDK `agora-rtc-sdk-ng` 和 Vue 组件库 `agora-rtc-vue` 实现一个可以将本地的音视频流分享给远端用户并进行实时互动的 Web app。用户可以使用此项目与好友远程分享影片并同时进行音视频互动。
+
+本项目的另一目的在于展示 `agora-rtc-vue` 的 API 和功能。
 
 ![screenshot_1](./demo_screenshot.png)
 
 ![screenshot_2](./demo_screenshot2.png)
-## 介绍
 
-本项目实现了一个可以远端分享音视频流和实时互动的 web DEMO,用户可以使用本应用与好友远程分享影片并同时进行音视频互动。
-本项目基于 Agora.io 的 Web SDK `agora-rtc-sdk-ng` 和 Vue 组件库 `agora-rtc-vue` 开发。
-本项目的目的在于展示 `agora-rtc-vue` 的 API 和功能。
-## 使用
+## 环境准备
+- Agora Web SDK 支持的浏览器，详见[Web SDK 兼容性](https://docs.agora.io/cn/Video/web_sdk_compatibility?platform=Web)。Agora 强烈推荐 Chrome 浏览器官方最新版本。
+- 物理音视频采集设备，如内置摄像头和麦克风。
+- 安装 Node.js 和 npm
+- 安装 yarn
 
-1. 安装依赖
-2. 输入你在 Agora.io 官网申请到的 APPID 及对应 TOKEN 到 `src/main.js` 的对应位置
-   
-   > 参考 [校验用户权限](https://docs.agora.io/cn/Agora%20Platform/token) 了解如何获取 App ID 和 Token。你可以获取一个临时 token，快速运行示例项目。
-   >
-   > 生成 Token 使用的频道名必须和加入频道时使用的频道名一致。
-   > 为提高项目的安全性，Agora 使用 Token（动态密钥）对即将加入频道的用户进行鉴权。
-   >
-   > 临时 Token 仅作为演示和测试用途。
-3. 运行命令`yarn serve`
-4. 浏览器打开项目地址
-5. 点击 `选择想要分享的影片` 按钮选择影片
-6. 点击 `开始观影` 进入观影界面
-7. 将观影界面 URL 分享给好友
-8. 好友打开链接，即可一起观影并互动
+## 运行示例项目
+
+1. 在 `demo_movies_together` 目录下运行 `yarn` 命令安装依赖。
+2. 在 `src/main.js` 中填写你在 Agora 控制台获取到的 App ID 及临时 Token。
+
+   > - 参考 [开始使用 Agora 平台](https://docs.agora.io/cn/Agora%20Platform/get_appid_token?platform=All%20Platforms) 了解如何在 Agora 控制台获取 App ID 和生成临时 Token。
+   > - 为提高项目的安全性，Agora 使用 Token（动态密钥）对加入频道的用户进行鉴权。临时 Token 仅作为演示和测试用途。生成临时 Token 使用的频道名必须和加入频道时使用的频道名一致。
+
+3. 运行 `yarn serve` 命令。
+4. 在 Chrome 浏览器中打开项目地址 `https://localhost:8080/`。
+5. 点击 `选择想要分享的影片` 按钮选择影片。
+6. 点击 `开始观影` 进入观影界面。
+7. 将观影界面 URL 分享给好友。
+8. 好友打开链接，即可一起观影并互动。
 
 ## Q&A
 
-   1. 在Mac下使用Chrome分享影片时, 好友打开URL, 影片界面是绿色的
-      Mac 下 Chrome 存在 BUG, 关闭Chrome硬件加速功能，重新分享
-   2. 无法打开页面
-      在浏览器和系统设置中信任HTTPS证书
+   1. Q: 在 Mac 上使用 Chrome 分享影片时, 好友打开 URL , 影片界面是绿色的。
+      A: Mac 上 Chrome 存在 BUG。关闭 Chrome 硬件加速功能后重新分享即可。
+   2. Q: 无法打开页面。
+      A: 在浏览器和系统设置中信任 HTTPS 证书。
 
 ## 参考文档
 
-- [Agora.io 官网](https://www.agora.io)
+- [Agora 官网](https://www.agora.io)
 - [Web SDK 文档](https://docs.agora.io/cn/Voice/API%20Reference/web_ng/index.html)
 - [agora-rtc-vue 文档](https://webdemo.agora.io/agora_rtc_vue_doc/)
 
@@ -60,8 +61,8 @@
 ## 相关资源
 
 - 你可以先参阅 [常见问题](https://docs.agora.io/cn/faq)
-- 如果你想了解更多官方示例，可以参考 [官方 SDK 示例](https://github.com/AgoraIO)
-- 如果你想了解声网 SDK 在复杂场景下的应用，可以参考 [官方场景案例](https://github.com/AgoraIO-usecase)
-- 如果你想了解声网的一些社区开发者维护的项目，可以查看 [社区](https://github.com/AgoraIO-Community)
+- 如果你想了解更多 Agora 官方示例，可以参考 [官方 SDK 示例](https://github.com/AgoraIO)
+- 如果你想了解 Agora SDK 在复杂场景下的应用，可以参考 [官方场景案例](https://github.com/AgoraIO-usecase)
+- 如果你想了解 Agora 的一些社区开发者维护的项目，可以查看 [社区](https://github.com/AgoraIO-Community)
 - 若遇到问题需要开发者帮助，你可以到 [开发者社区](https://rtcdeveloper.com/) 提问
 - 如果需要售后技术支持, 你可以在 [Agora Dashboard](https://dashboard.agora.io) 提交工单
